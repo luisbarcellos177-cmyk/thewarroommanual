@@ -122,6 +122,7 @@ strong { font-weight: 600; color: var(--cream); }
 .hero h1 span { display: block; }
 .dare { font-family: var(--type); font-size: var(--t-md); color: var(--sand); border-left: 3px solid var(--red); padding-left: 16px; max-width: 46ch; }
 .hero .lede b { color: var(--cream); font-weight: 600; }
+.notdev { font-family: var(--type); font-size: var(--t-sm); letter-spacing: 0.04em; color: var(--amber); }
 .priceline { font-family: var(--type); font-size: 0.86rem; letter-spacing: 0.06em; color: var(--sand); }
 .priceline b { color: var(--cream); font-size: 1.05rem; }
 .proof { display: flex; align-items: center; gap: 12px; color: var(--sand); font-size: var(--t-sm); padding-top: 6px; border-top: 1px solid var(--line); }
@@ -438,10 +439,11 @@ footer small { font-size: 0.78rem; line-height: 1.6; max-width: 90ch; }
 <header class="hero">
   <div class="wrap">
     <div class="col">
-      <span class="stamp" id="hero-stamp" style="align-self: flex-start">Warning</span>
-      <h1 id="hero-h1"><span>This is <em>not</em></span><span>a devotional.</span></h1>
-      <p class="dare" id="hero-dare">If you've made peace with a comfortable, powerless Christian life, close this page now.</p>
-      <p class="lede">Still here? Then this was written for you. <b>The War Room Manual is a 30-day boot camp for the believer whose prayer life died on day four.</b> Every night you read one page. Every morning you wake up to one mission. No fluff, no guesswork, nothing left to figure out.</p>
+      <span class="stamp" id="hero-stamp" style="align-self: flex-start">A 30-day prayer plan</span>
+      <h1 id="hero-h1" class="long"><span>Tired of restarting</span><span>your prayer life</span><span><em>every Monday?</em></span></h1>
+      <p class="dare" id="hero-dare">You don't have a prayer problem. You have a plan problem.</p>
+      <p class="lede" id="hero-lede"><b>The War Room Manual is a 30-day plan for the believer whose prayer life keeps dying on day four.</b> Every night you read one page. Every morning you wake up to one mission. No fluff, no guesswork, nothing left to figure out.</p>
+      <p class="notdev" id="hero-note">This is not a devotional. Every single day ends with an assignment.</p>
       <div class="cta" id="hero-cta">
         <a class="btn" href="https://pay.hotmart.com/X106714964C?checkoutMode=10&amp;src=lp_hero">Report for Duty <span class="ar">→</span></a>
         <span class="priceline"><b>$44.99</b> one-time · instant access · 30-day guarantee</span>
@@ -477,7 +479,7 @@ footer small { font-size: 0.78rem; line-height: 1.6; max-width: 90ch; }
   <div class="wrap split">
     <div class="col">
       <span class="tag">Situation report</span>
-      <h2 id="sitrep">You don't have a prayer problem. You have a <em>plan</em> problem.</h2>
+      <h2 id="sitrep">This is why your last plan <em>died on day four.</em></h2>
       <p class="lede">Nobody has to convince you that prayer matters. You know it does. That is exactly why these words sound familiar:</p>
       <ul class="voices">
         <li>"I start strong on Monday. By Thursday, the alarm wins."</li>
@@ -872,6 +874,14 @@ footer small { font-size: 0.78rem; line-height: 1.6; max-width: 90ch; }
         <a href="https://www.instagram.com/christianthinkersofc/">Instagram</a>
       </nav>
     </div>
+    <div class="row">
+      <span>Your purchase is processed and protected by Hotmart:</span>
+      <nav aria-label="Hotmart policies">
+        <a href="https://hotmart.com/en/legal/purchase-terms" rel="noopener">Terms of Purchase</a>
+        <a href="https://hotmart.com/en/legal/data-privacy-policy" rel="noopener">Privacy Policy</a>
+        <a href="https://help.hotmart.com/en/article/360061973392" rel="noopener">Refund Policy</a>
+      </nav>
+    </div>
     <small>Payments are processed securely by Hotmart. The War Room Manual is an independent publication of Christian Thinkers and is not affiliated with any film, publisher or ministry of a similar name. This site is not part of Facebook or Meta Platforms, Inc., and is not endorsed by Meta in any way.</small>
   </div>
 </footer>
@@ -883,7 +893,8 @@ footer small { font-size: 0.78rem; line-height: 1.6; max-width: 90ch; }
 
 <script>
 (function () {
-  // The headline repeats the ad the visitor clicked: add ?ad=plan or ?ad=lie to the page link (or #ad-plan / #ad-lie).
+  // The headline repeats the ad the visitor clicked: add ?ad=plan, ?ad=lie or ?ad=devotional to the page link (or #ad-plan ...).
+  var PLAN = "You don't have a prayer problem. You have a <em>plan</em> problem.";
   var ads = {
     plan: {
       stamp: "This is not a devotional",
@@ -895,7 +906,13 @@ footer small { font-size: 0.78rem; line-height: 1.6; max-width: 90ch; }
       stamp: "This is not a devotional",
       h1: "<span>“God is close to others,</span><span>just not to me.”</span><span><em>That's a lie.</em></span>",
       dare: "He has not moved. What is missing is not His nearness. It is a plan to meet Him every day.",
-      sit: "You don't have a prayer problem. You have a <em>plan</em> problem."
+      sit: PLAN
+    },
+    devotional: {
+      stamp: "Warning", short: true,
+      h1: "<span>This is <em>not</em></span><span>a devotional.</span>",
+      dare: "If you've made peace with a comfortable, powerless Christian life, close this page now.",
+      sit: PLAN
     }
   };
   var q = new URLSearchParams(location.search);
@@ -903,7 +920,8 @@ footer small { font-size: 0.78rem; line-height: 1.6; max-width: 90ch; }
   var ad = ads[key];
   if (ad) {
     var h1 = document.getElementById("hero-h1");
-    h1.innerHTML = ad.h1; h1.classList.add("long");
+    h1.innerHTML = ad.h1; h1.classList.toggle("long", !ad.short);
+    if (ad.short) document.getElementById("hero-note").hidden = true;
     document.getElementById("hero-stamp").textContent = ad.stamp;
     document.getElementById("hero-dare").textContent = ad.dare;
     document.getElementById("sitrep").innerHTML = ad.sit;
