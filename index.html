@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://thewarroommanual.com/">
+<link rel="icon" type="image/png" href="seal.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thewarroommanual.com/">
+<meta property="og:title" content="The War Room Manual: 30 Days of Spiritual Strategy">
+<meta property="og:description" content="Not a devotional. A 30-day boot camp for your prayer life: one page a night, one mission by morning.">
+<meta property="og:image" content="https://thewarroommanual.com/vsl-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>The War Room Manual</title>
+<meta name="description" content="Not a devotional. A 30-day boot camp for your prayer life: one page a night, one mission by morning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap">
+<style>
+/* Layout: a desk at night under one lamp. The page itself is the dark desk; everything that
+   comes out of the manual (Day 1, the orders, the guarantee) lies on it as parchment, in the
+   same paper and crimson ink as the real PDF. Amber is the lamp, red is the stamp.
+   Single dark look, by choice. */
+:root {
+  color-scheme: dark;
+  --desk: #0c0906;
+  --desk-2: #14100b;
+  --panel: #1b140d;
+  --line: #3a2b1c;
+  --cream: #f6eedc;
+  --sand: #d9c9a8;
+  --dim: #a18f76;
+  --amber: #f2b134;
+  --amber-deep: #b97f17;
+  --red: #d1463a;
+  --oxblood: #8f1d18;
+  --paper: #eadbb9;
+  --paper-edge: #cdb88c;
+  --ink: #2a1b0f;
+  --ink-soft: #5b4630;
+  --on-amber: #1a1006;
+  --display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --type: "Courier Prime", "Courier New", Courier, monospace;
+  --t-xs: 0.78rem;
+  --t-sm: 0.92rem;
+  --t-md: 1.0625rem;
+  --t-lg: clamp(1.15rem, 2.6vw, 1.32rem);
+  --t-h3: clamp(1.3rem, 3.4vw, 1.6rem);
+  --t-h2: clamp(1.95rem, 5.6vw, 3.1rem);
+  --t-h1: clamp(2.7rem, 10.5vw, 5.4rem);
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .2 0 0 0 0 .1 0 0 0 .2 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--desk);
+  color: var(--cream);
+  font-family: var(--body);
+  font-size: var(--t-md);
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, p, ul, ol, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+h1, h2, h3 { font-family: var(--display); font-weight: 800; line-height: 1.08; text-wrap: balance; letter-spacing: -0.005em; }
+h2 { font-size: var(--t-h2); }
+h3 { font-size: var(--t-h3); line-height: 1.2; }
+h2 em, h1 em { font-style: italic; color: var(--amber); }
+img { display: block; height: auto; }
+a { color: var(--amber); }
+
+.wrap { max-width: 1120px; margin-inline: auto; padding-left: max(18px, env(safe-area-inset-left, 0px)); padding-right: max(18px, env(safe-area-inset-right, 0px)); }
+.wrap.slim { max-width: 800px; }
+.band { padding-block: clamp(60px, 9vw, 116px); position: relative; }
+.band.lit { background: radial-gradient(70rem 26rem at 50% 0%, rgba(242, 177, 52, 0.07), transparent 70%), var(--desk-2); border-block: 1px solid var(--line); }
+.col { display: flex; flex-direction: column; gap: 22px; }
+.col.tight { gap: 12px; }
+.center { text-align: center; align-items: center; }
+.tag { font-family: var(--type); font-weight: 700; font-size: var(--t-xs); letter-spacing: 0.2em; text-transform: uppercase; color: var(--amber); display: inline-flex; align-items: center; gap: 12px; }
+.tag::before { content: ""; width: 26px; height: 2px; background: var(--amber); flex: none; }
+.center .tag::after { content: ""; width: 26px; height: 2px; background: var(--amber); flex: none; }
+.lede { font-size: var(--t-lg); color: var(--sand); max-width: 62ch; }
+.sand { color: var(--sand); }
+.dim { color: var(--dim); }
+.fine { font-family: var(--type); font-size: var(--t-xs); letter-spacing: 0.04em; color: var(--dim); }
+strong { font-weight: 600; color: var(--cream); }
+
+/* stamp */
+.stamp { display: inline-block; font-family: var(--type); font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.82rem; color: var(--red); border: 2px solid var(--red); border-radius: 3px; padding: 5px 12px 3px; transform: rotate(-3deg); box-shadow: inset 0 0 0 1px rgba(209, 70, 58, 0.25); }
+.paper .stamp { color: var(--oxblood); border-color: var(--oxblood); box-shadow: inset 0 0 0 1px rgba(143, 29, 24, 0.25); mix-blend-mode: multiply; }
+
+/* buttons */
+.cta { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.center .cta, .cta.mid { align-items: center; text-align: center; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  min-height: 62px; padding: 0 34px;
+  background: linear-gradient(180deg, #f7c04f, var(--amber)); color: var(--on-amber);
+  font-family: var(--type); font-weight: 700; font-size: 1.08rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none;
+  border-radius: 4px; border: 1px solid #ffd77a;
+  box-shadow: 0 0 0 4px rgba(242, 177, 52, 0.12), 0 18px 40px -16px rgba(242, 177, 52, 0.6);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 0 0 6px rgba(242, 177, 52, 0.16), 0 22px 44px -16px rgba(242, 177, 52, 0.7); }
+.btn:focus-visible, summary:focus-visible, a:focus-visible { outline: 2px solid var(--cream); outline-offset: 3px; }
+.btn.ghost { background: transparent; color: var(--amber); border-color: var(--amber-deep); box-shadow: none; }
+.btn.ghost:hover { background: rgba(242, 177, 52, 0.08); }
+.btn .ar { font-family: var(--body); font-size: 1.3rem; line-height: 1; }
+
+/* top strip */
+.strip { background: #070504; border-bottom: 1px solid var(--line); }
+.strip .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 26px; padding-block: 9px; }
+.strip span { font-family: var(--type); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sand); }
+.strip span::before { content: "✓ "; color: var(--amber); }
+
+/* hero */
+.hero { position: relative; isolation: isolate; overflow: hidden; background: radial-gradient(52rem 34rem at 82% 30%, rgba(242, 177, 52, 0.16), transparent 62%), radial-gradient(40rem 30rem at 0% 100%, rgba(143, 29, 24, 0.16), transparent 65%), var(--desk); }
+.hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background-image: var(--grain); opacity: .5; pointer-events: none; }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); gap: clamp(30px, 5vw, 70px); align-items: center; padding-block: clamp(36px, 6vw, 84px) clamp(48px, 7vw, 96px); }
+.hero h1 { font-size: var(--t-h1); font-weight: 900; line-height: 0.98; letter-spacing: -0.015em; }
+.hero h1 span { display: block; }
+.dare { font-family: var(--type); font-size: var(--t-md); color: var(--sand); border-left: 3px solid var(--red); padding-left: 16px; max-width: 46ch; }
+.hero .lede b { color: var(--cream); font-weight: 600; }
+.priceline { font-family: var(--type); font-size: 0.86rem; letter-spacing: 0.06em; color: var(--sand); }
+.priceline b { color: var(--cream); font-size: 1.05rem; }
+.proof { display: flex; align-items: center; gap: 12px; color: var(--sand); font-size: var(--t-sm); padding-top: 6px; border-top: 1px solid var(--line); }
+.proof img { width: 42px; height: 42px; border-radius: 50%; flex: none; }
+.kit { position: relative; aspect-ratio: 1 / 1.06; max-width: 100%; border-radius: 10px; overflow: hidden; background: #000 url("desk.webp") 12% 50% / cover no-repeat; box-shadow: 0 0 0 1px var(--line), 0 50px 90px -50px #000; }
+.kit::before { content: ""; position: absolute; inset: 0; background: radial-gradient(farthest-side at 50% 45%, rgba(12, 9, 6, 0.1), rgba(12, 9, 6, 0.55)); }
+.kit img { position: absolute; border-radius: 2px; box-shadow: 0 24px 50px -14px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(0, 0, 0, 0.4); }
+.kit .k-page { width: 41%; left: 5%; top: 17%; transform: rotate(-9deg); }
+.kit .k-journal { width: 36%; right: 5%; top: 24%; transform: rotate(8deg); }
+.kit .k-cover { width: 47%; left: 26.5%; top: 8%; transform: rotate(-1.5deg); box-shadow: 0 30px 60px -12px #000, 0 0 60px -10px rgba(242, 177, 52, 0.45); }
+.kit .stamp { position: absolute; right: 5%; bottom: 6%; background: rgba(12, 9, 6, 0.7); transform: rotate(-6deg); }
+
+/* situation report */
+.split { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
+.voices { display: flex; flex-direction: column; gap: 12px; }
+.voices li { font-family: var(--type); font-size: var(--t-md); color: var(--cream); background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--red); border-radius: 3px; padding: 12px 16px; }
+.turn { font-size: var(--t-lg); color: var(--sand); }
+.turn b { color: var(--amber); font-weight: 600; }
+.shot { position: relative; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+.shot img { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; object-position: 60% 100%; filter: saturate(0.9) contrast(1.05); }
+.shot figcaption { position: absolute; inset: auto 0 0 0; padding: 40px 18px 14px; background: linear-gradient(180deg, transparent, rgba(8, 6, 4, 0.92)); font-family: var(--type); font-size: var(--t-sm); color: var(--cream); }
+.shot figcaption b { color: var(--amber); }
+
+/* epigraph */
+.epi { padding-block: clamp(40px, 6vw, 70px); border-block: 1px solid var(--line); background: var(--desk-2); }
+.epi blockquote { font-family: var(--display); font-style: italic; font-weight: 700; font-size: clamp(1.35rem, 3.8vw, 2rem); line-height: 1.3; text-align: center; text-wrap: balance; color: var(--cream); }
+.epi cite { display: block; margin-top: 14px; font-family: var(--type); font-style: normal; font-size: var(--t-xs); letter-spacing: 0.16em; text-transform: uppercase; color: var(--dim); }
+
+/* eligibility */
+.duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.elig { background: var(--panel); border: 1px solid var(--line); border-top: 3px solid var(--amber); border-radius: 6px; padding: 26px 24px; display: flex; flex-direction: column; gap: 16px; }
+.elig.no { border-top-color: var(--red); }
+.elig h3 { font-family: var(--type); font-weight: 700; font-size: 1rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); }
+.elig.no h3 { color: var(--red); }
+.elig ul { display: flex; flex-direction: column; gap: 12px; }
+.elig li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; color: var(--sand); }
+.elig li::before { content: "✓"; color: var(--amber); font-weight: 700; }
+.elig.no li::before { content: "✕"; color: var(--red); }
+.note { font-family: var(--type); color: var(--sand); border: 1px dashed var(--line); border-radius: 4px; padding: 14px 18px; text-align: center; }
+
+/* phases */
+.phases { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.phase { position: relative; background: linear-gradient(180deg, #20170f, var(--panel)); border: 1px solid var(--line); border-radius: 6px; padding: 28px 24px 24px; display: flex; flex-direction: column; gap: 12px; }
+.phase svg { width: 44px; height: 44px; stroke: var(--amber); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.phase .days { font-family: var(--type); font-weight: 700; font-size: var(--t-sm); letter-spacing: 0.18em; color: var(--amber); }
+.phase .code { align-self: flex-start; transform: rotate(-2deg); font-size: 0.72rem; }
+.phase p { color: var(--sand); }
+.phase .work { margin-top: auto; padding-top: 14px; border-top: 1px dashed var(--line); font-family: var(--type); font-size: var(--t-sm); color: var(--cream); }
+.phase .work b { color: var(--amber); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: var(--t-xs); display: block; }
+.phase .voice { font-style: italic; color: var(--dim); font-size: var(--t-sm); }
+
+/* how a day works */
+.how { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(30px, 6vw, 76px); align-items: center; }
+.realpage { position: relative; max-width: 400px; width: 100%; margin-inline: auto; transform: rotate(-2deg); }
+.realpage img { width: 100%; border-radius: 2px; box-shadow: 0 40px 70px -30px #000, 0 0 0 1px rgba(0, 0, 0, 0.5); }
+.pin { position: absolute; right: -14px; width: 34px; height: 34px; border-radius: 50%; background: var(--amber); color: var(--on-amber); font-family: var(--type); font-weight: 700; display: grid; place-items: center; box-shadow: 0 0 0 4px rgba(12, 9, 6, 0.85), 0 6px 14px rgba(0, 0, 0, 0.6); }
+.pin.p1 { top: 5.5%; }
+.pin.p2 { top: 36%; }
+.pin.p3 { top: 73%; background: var(--red); color: #fff; }
+.realpage figcaption { margin-top: 16px; transform: rotate(2deg); text-align: center; }
+.steps { display: flex; flex-direction: column; gap: 0; }
+.steps li { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 18px; padding-block: 20px; border-bottom: 1px solid var(--line); }
+.steps li:first-child { padding-top: 0; }
+.steps .n { width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--amber); color: var(--amber); font-family: var(--type); font-weight: 700; font-size: 1.1rem; display: grid; place-items: center; }
+.steps li.exec .n { border-color: var(--red); color: var(--red); }
+.steps .when { font-family: var(--type); font-weight: 700; font-size: var(--t-xs); letter-spacing: 0.16em; text-transform: uppercase; color: var(--dim); }
+.steps h3 { margin-block: 2px 6px; }
+.steps p { color: var(--sand); }
+.pull { font-family: var(--display); font-weight: 800; font-size: clamp(1.4rem, 3.8vw, 2rem); line-height: 1.2; color: var(--cream); text-wrap: balance; }
+.pull span { color: var(--amber); font-style: italic; }
+
+/* paper */
+.paper { position: relative; background-color: var(--paper); background-image: var(--grain), radial-gradient(120% 90% at 50% 0%, rgba(255, 250, 235, 0.55), transparent 60%), linear-gradient(180deg, var(--paper), #e2d0a8); color: var(--ink); border-radius: 3px; box-shadow: 0 1px 0 var(--paper-edge), 0 46px 80px -40px #000, 0 0 0 1px rgba(0, 0, 0, 0.35); }
+.doc { padding: clamp(24px, 6vw, 56px); display: flex; flex-direction: column; gap: 18px; }
+.doc .head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; padding-bottom: 12px; border-bottom: 1px solid var(--paper-edge); font-family: var(--type); font-size: var(--t-xs); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); }
+.doc h3 { color: var(--oxblood); font-size: clamp(1.6rem, 5vw, 2.3rem); font-weight: 900; }
+.doc .part { font-family: var(--type); font-weight: 700; font-size: var(--t-sm); letter-spacing: 0.16em; text-transform: uppercase; color: var(--oxblood); }
+.doc .verse { font-family: var(--display); font-style: italic; font-weight: 700; font-size: var(--t-lg); line-height: 1.45; color: var(--ink); padding-left: 16px; border-left: 3px solid var(--oxblood); }
+.doc .verse b { display: block; margin-top: 6px; font-family: var(--type); font-style: normal; font-size: var(--t-xs); letter-spacing: 0.12em; color: var(--ink-soft); }
+.doc .fire { display: flex; flex-direction: column; gap: 13px; }
+.doc .fire p:first-child { font-family: var(--display); font-weight: 800; font-size: var(--t-h3); line-height: 1.25; }
+.orders-box { border: 2px solid var(--oxblood); border-radius: 3px; padding: 18px 20px; background: rgba(143, 29, 24, 0.07); display: flex; flex-direction: column; gap: 8px; }
+.orders-box p:last-child { font-weight: 500; }
+.slips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.slip { padding: 20px 22px; display: flex; flex-direction: column; gap: 8px; }
+.slip:nth-child(odd) { transform: rotate(-0.6deg); }
+.slip:nth-child(even) { transform: rotate(0.5deg); }
+.slip .d { font-family: var(--type); font-weight: 700; font-size: var(--t-xs); letter-spacing: 0.16em; text-transform: uppercase; color: var(--oxblood); }
+.slip h3 { font-size: 1.2rem; color: var(--ink); }
+.slip p { font-family: var(--type); font-size: var(--t-sm); line-height: 1.55; color: var(--ink); }
+.count { font-family: var(--display); font-weight: 900; font-size: var(--t-h2); line-height: 1.1; text-align: center; text-wrap: balance; }
+.count span { color: var(--amber); font-style: italic; }
+
+/* day 0 / day 30 */
+.ba { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 18px; align-items: stretch; }
+.ba > div { border-radius: 6px; padding: 28px 24px; display: flex; flex-direction: column; gap: 16px; }
+.ba .before { border: 1px dashed var(--line); }
+.ba .after { background: linear-gradient(180deg, #241a10, var(--panel)); border: 1px solid var(--amber-deep); }
+.ba h3 { font-family: var(--type); font-weight: 700; font-size: 1rem; letter-spacing: 0.18em; text-transform: uppercase; }
+.ba .before h3 { color: var(--dim); }
+.ba .after h3 { color: var(--amber); }
+.ba ul { display: flex; flex-direction: column; gap: 14px; }
+.ba .before li { color: var(--dim); text-decoration: line-through; text-decoration-color: rgba(209, 70, 58, 0.7); }
+.ba .after li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; color: var(--sand); }
+.ba .after li::before { content: "✓"; color: var(--amber); font-weight: 700; }
+.ba .after li b { color: var(--cream); font-weight: 600; }
+.ba .after li i { font-style: normal; font-family: var(--type); font-size: var(--t-xs); color: var(--dim); letter-spacing: 0.06em; white-space: nowrap; }
+.honest { font-size: var(--t-lg); color: var(--sand); border-left: 3px solid var(--amber); padding-left: 18px; max-width: 64ch; }
+
+/* field reports */
+.nums { display: flex; flex-wrap: wrap; gap: 14px 44px; }
+.nums div { display: flex; flex-direction: column; gap: 2px; }
+.nums b { font-family: var(--display); font-weight: 900; font-size: clamp(2.4rem, 8vw, 3.6rem); line-height: 1; color: var(--amber); font-variant-numeric: tabular-nums; }
+.nums span { font-family: var(--type); font-size: var(--t-xs); letter-spacing: 0.14em; text-transform: uppercase; color: var(--sand); }
+.reports { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.report { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 26px 24px; display: flex; flex-direction: column; gap: 18px; }
+.report.lead { grid-column: 1 / -1; border-color: var(--amber-deep); background: linear-gradient(180deg, #241a10, var(--panel)); }
+.report blockquote { font-size: var(--t-md); color: var(--cream); }
+.report.lead blockquote { font-family: var(--display); font-weight: 700; font-size: clamp(1.3rem, 3.6vw, 1.8rem); line-height: 1.3; }
+.report .who { margin-top: auto; display: flex; align-items: center; gap: 12px; }
+.report .ini { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--amber-deep); display: grid; place-items: center; font-family: var(--display); font-weight: 800; color: var(--amber); flex: none; }
+.report .who b { display: block; font-weight: 600; }
+.report .who span { font-family: var(--type); font-size: var(--t-xs); color: var(--dim); letter-spacing: 0.05em; }
+.report .done { font-family: var(--type); font-weight: 700; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); border: 1px solid var(--amber-deep); border-radius: 3px; padding: 3px 8px 1px; align-self: flex-start; }
+
+/* video slot */
+.player { position: relative; width: 100%; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 10px; overflow: hidden; background: #000; border: 1px solid var(--amber-deep); box-shadow: 0 0 80px -30px rgba(242, 177, 52, 0.55), 0 50px 90px -50px #000; }
+.player video { display: block; width: 100%; height: 100%; object-fit: cover; background: #000; }
+.player .play { position: absolute; left: 50%; top: 50%; width: 84px; height: 84px; margin: -42px 0 0 -42px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 10px rgba(242, 177, 52, 0.18); }
+.player .play::after { content: ""; position: absolute; left: 34px; top: 26px; border-style: solid; border-width: 16px 0 16px 26px; border-color: transparent transparent transparent var(--on-amber); }
+.player .plabel { position: absolute; left: 0; right: 0; bottom: 0; padding: 34px 16px 12px; background: linear-gradient(180deg, transparent, rgba(5, 4, 3, 0.9)); font-family: var(--type); font-size: var(--t-sm); color: var(--cream); text-align: left; }
+.player .stamp { position: absolute; top: 14px; right: 14px; background: rgba(12, 9, 6, 0.75); transform: rotate(3deg); }
+.hero h1.long { font-size: clamp(2.2rem, 8vw, 4.1rem); line-height: 1.04; }
+
+/* field reports with the real prints */
+.frs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.fr { min-width: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 16px; }
+.fr.lead { grid-column: 1 / -1; border-color: var(--amber-deep); background: linear-gradient(180deg, #241a10, var(--panel)); }
+.fr-head { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.fr-head .ini { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--amber-deep); display: grid; place-items: center; font-family: var(--display); font-weight: 800; color: var(--amber); flex: none; }
+.fr-head b { display: block; font-weight: 600; }
+.fr-head div span { font-family: var(--type); font-size: var(--t-xs); color: var(--dim); letter-spacing: 0.04em; }
+.fr-head .done { margin-left: auto; font-family: var(--type); font-weight: 700; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); border: 1px solid var(--amber-deep); border-radius: 3px; padding: 4px 9px 2px; }
+.fr blockquote { font-family: var(--display); font-weight: 700; font-size: clamp(1.15rem, 3vw, 1.45rem); line-height: 1.35; color: var(--cream); }
+.fr.lead blockquote { font-size: clamp(1.35rem, 3.8vw, 1.9rem); }
+.print { margin-top: auto; overflow-x: auto; overflow-y: hidden; border-radius: 4px; background: #fff; box-shadow: 0 14px 30px -16px #000, 0 0 0 1px rgba(255, 255, 255, 0.08); transform: rotate(-0.35deg); scrollbar-width: thin; scrollbar-color: var(--amber-deep) #e9e4da; }
+.print img { display: block; width: auto; max-width: none; }
+.print:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+.fr figcaption { font-family: var(--type); font-size: var(--t-xs); letter-spacing: 0.06em; color: var(--sand); }
+.fr figcaption i { font-style: normal; color: var(--dim); }
+
+/* channel proof */
+.chan { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
+.browser { border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: #0f0f0f; box-shadow: 0 50px 90px -50px #000, 0 0 70px -34px rgba(242, 177, 52, 0.5); transform: rotate(-1deg); }
+.browser .chrome { display: flex; align-items: center; gap: 6px; padding: 9px 12px; background: #1c1c1c; border-bottom: 1px solid #2a2a2a; }
+.browser .chrome i { width: 9px; height: 9px; border-radius: 50%; background: #4a4a4a; }
+.browser .chrome span { margin-left: 8px; font-family: var(--type); font-size: 0.7rem; color: #a9a9a9; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.browser img { width: 100%; }
+.nums.small b { font-size: clamp(1.7rem, 5vw, 2.3rem); }
+.nums.small { gap: 14px 30px; }
+.nums.small div { max-width: 16ch; }
+.byline { display: flex; align-items: center; gap: 14px; padding-top: 18px; border-top: 1px solid var(--line); }
+.byline img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: 50% 12%; border: 2px solid var(--amber-deep); flex: none; }
+.byline b { display: block; font-family: var(--display); font-weight: 800; font-size: 1.2rem; color: var(--cream); }
+.byline span { font-family: var(--type); font-size: var(--t-xs); letter-spacing: 0.06em; color: var(--dim); }
+
+/* loadout */
+.plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
+.plan { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 28px 22px 24px; display: flex; flex-direction: column; gap: 16px; }
+.plan.best { background: linear-gradient(180deg, #2b1e10, #1d150d); border: 2px solid var(--amber); box-shadow: 0 0 70px -24px rgba(242, 177, 52, 0.55); }
+.ribbon { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--amber); color: var(--on-amber); font-family: var(--type); font-weight: 700; font-size: 0.74rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 5px 14px 3px; border-radius: 3px; white-space: nowrap; }
+.plan .name { font-family: var(--type); font-weight: 700; font-size: 0.95rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--amber); }
+.thumbs { display: flex; gap: 10px; align-items: flex-end; min-height: 116px; }
+.thumbs img, .thumbs .tape { height: 116px; width: auto; border-radius: 2px; box-shadow: 0 10px 20px -8px #000; }
+.thumbs .tape { aspect-ratio: 0.7; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; background: linear-gradient(160deg, #2f2012, #130d08); border: 1px solid var(--amber-deep); font-family: var(--type); font-weight: 700; font-size: 0.6rem; letter-spacing: 0.1em; color: var(--amber); text-align: center; }
+.tape i { display: flex; align-items: center; gap: 2px; height: 26px; }
+.tape i s { width: 3px; background: var(--amber); border-radius: 2px; }
+.plan ul { display: flex; flex-direction: column; gap: 10px; }
+.plan li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 6px; color: var(--sand); font-size: var(--t-sm); line-height: 1.5; }
+.plan li::before { content: "+"; color: var(--amber); font-family: var(--type); font-weight: 700; }
+.plan li b { color: var(--cream); font-weight: 600; }
+.plan .price { margin-top: auto; display: flex; flex-direction: column; gap: 2px; padding-top: 16px; border-top: 1px dashed var(--line); }
+.plan .price b { font-family: var(--display); font-weight: 900; font-size: clamp(2.3rem, 7vw, 2.9rem); line-height: 1; color: var(--cream); font-variant-numeric: tabular-nums; }
+.plan .price span { font-family: var(--type); font-size: var(--t-xs); color: var(--dim); letter-spacing: 0.04em; }
+.plan .price span s { text-decoration-color: var(--red); }
+.plan .price span em { font-style: normal; color: var(--amber); font-weight: 700; }
+.plan .btn { width: 100%; padding: 0 12px; min-height: 56px; font-size: 0.92rem; letter-spacing: 0.1em; }
+.solo { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(24px, 5vw, 60px); align-items: center; background: linear-gradient(180deg, #2b1e10, #1d150d); border: 2px solid var(--amber); border-radius: 10px; padding: clamp(24px, 5vw, 52px); box-shadow: 0 0 80px -28px rgba(242, 177, 52, 0.55); }
+.solo-cover { width: 100%; max-width: 310px; margin-inline: auto; transform: rotate(-2deg); border-radius: 2px; box-shadow: 0 34px 60px -18px #000, 0 0 60px -14px rgba(242, 177, 52, 0.45); }
+.plan.bare { background: none; border: 0; padding: 0; gap: 20px; }
+.plan.bare .name { font-family: var(--display); font-weight: 900; font-size: var(--t-h3); letter-spacing: 0; text-transform: none; color: var(--cream); }
+.plan.bare li { font-size: var(--t-md); }
+.plan.bare .btn { min-height: 62px; font-size: 1.05rem; }
+.addons-title { font-family: var(--type); font-size: var(--t-sm); letter-spacing: 0.04em; color: var(--sand); text-align: center; }
+.addons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.addon { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 18px; align-items: center; border: 1px dashed var(--line); border-radius: 8px; padding: 18px; }
+.addon img, .addon .tape { width: 76px; height: auto; aspect-ratio: 0.7; border-radius: 2px; box-shadow: 0 12px 22px -10px #000; }
+.addon .tape { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; background: linear-gradient(160deg, #2f2012, #130d08); border: 1px solid var(--amber-deep); font-family: var(--type); font-weight: 700; font-size: 0.6rem; letter-spacing: 0.1em; color: var(--amber); text-align: center; }
+.addon b { color: var(--cream); font-weight: 600; }
+.addon p { color: var(--sand); font-size: var(--t-sm); line-height: 1.5; margin-block: 4px 8px; }
+.addon .plus { font-family: var(--type); font-weight: 700; color: var(--amber); letter-spacing: 0.06em; }
+.launch { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px; align-items: center; border: 1px solid var(--oxblood); background: rgba(143, 29, 24, 0.14); border-radius: 6px; padding: 16px 20px; color: var(--sand); }
+.launch b { color: var(--cream); }
+.launch .stamp { justify-self: start; }
+.bonus { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(22px, 4vw, 48px); align-items: center; border: 1px solid var(--line); border-radius: 8px; padding: clamp(22px, 4vw, 36px); background: var(--desk-2); }
+.bonus .covers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.bonus .covers img { width: 100%; border-radius: 2px; box-shadow: 0 18px 30px -14px #000, 0 0 0 1px rgba(242, 177, 52, 0.18); }
+.bonus .covers img:nth-child(1) { transform: rotate(-3deg); }
+.bonus .covers img:nth-child(3) { transform: rotate(3deg); }
+.bonus dl { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.bonus dt { font-weight: 600; color: var(--cream); }
+.bonus dd { margin: 0; color: var(--sand); font-size: var(--t-sm); }
+.pay { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.pay span { font-family: var(--type); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid var(--line); border-radius: 3px; padding: 5px 10px 3px; color: var(--sand); }
+
+/* guarantee */
+.cert { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(20px, 5vw, 48px); align-items: center; padding: clamp(26px, 6vw, 52px); outline: 1px solid var(--paper-edge); outline-offset: -10px; }
+.seal { width: 152px; height: 152px; border-radius: 50%; border: 3px double var(--oxblood); display: grid; place-items: center; text-align: center; transform: rotate(-8deg); color: var(--oxblood); mix-blend-mode: multiply; }
+.seal div { display: flex; flex-direction: column; }
+.seal b { font-family: var(--display); font-weight: 900; font-size: 3rem; line-height: 0.95; }
+.seal span { font-family: var(--type); font-weight: 700; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; }
+.cert h2 { color: var(--ink); font-size: clamp(1.7rem, 4.6vw, 2.4rem); }
+.cert p { color: var(--ink); }
+.cert .tag { color: var(--oxblood); }
+.cert .tag::before { background: var(--oxblood); }
+
+/* faq */
+.faq { border-top: 1px solid var(--line); }
+details { border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; list-style: none; position: relative; padding: 20px 40px 20px 0; font-weight: 600; font-size: 1.1rem; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; position: absolute; right: 4px; top: 14px; font-family: var(--type); font-size: 1.6rem; color: var(--amber); }
+details[open] summary::after { content: "–"; }
+details p { padding-bottom: 22px; color: var(--sand); max-width: 68ch; }
+
+/* about */
+.about { display: grid; grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr); gap: clamp(28px, 6vw, 72px); align-items: center; }
+.portrait { position: relative; max-width: 420px; width: 100%; margin-inline: auto; }
+.portrait > img:first-child { width: 100%; border-radius: 6px; border: 1px solid var(--line); box-shadow: 0 40px 70px -40px #000; }
+.portrait .badge { position: absolute; right: -12px; bottom: -12px; width: 78px; height: 78px; border-radius: 50%; border: 4px solid var(--desk-2); }
+.sign { font-family: var(--display); font-style: italic; font-weight: 700; font-size: 1.4rem; color: var(--amber); }
+
+/* final */
+.final { position: relative; isolation: isolate; overflow: hidden; background: #050403; border-top: 1px solid var(--line); }
+.final::before { content: ""; position: absolute; inset: 0; z-index: -2; background: url("door.webp") 72% 50% / cover no-repeat; }
+.final::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(5, 4, 3, 0.9), rgba(5, 4, 3, 0.45) 60%, rgba(5, 4, 3, 0.25)); }
+.final .wrap { padding-block: clamp(80px, 13vw, 170px); }
+.final h2 { font-size: var(--t-h1); font-weight: 900; line-height: 0.98; }
+.final .col { max-width: 640px; }
+.ps { font-family: var(--type); font-size: var(--t-sm); color: var(--sand); border-top: 1px solid var(--line); padding-top: 18px; }
+
+/* footer */
+footer { background: #070504; border-top: 1px solid var(--line); }
+footer .wrap { display: flex; flex-direction: column; gap: 18px; padding-block: 34px calc(34px + 84px); font-size: var(--t-sm); color: var(--dim); }
+footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 28px; align-items: center; }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+footer a { color: var(--sand); text-decoration: none; }
+footer a:hover { color: var(--amber); }
+footer small { font-size: 0.78rem; line-height: 1.6; max-width: 90ch; }
+
+/* sticky bar */
+.bar { display: none; }
+@media (max-width: 780px) {
+  .bar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; align-items: center; justify-content: space-between; gap: 12px; padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); background: rgba(7, 5, 4, 0.95); border-top: 1px solid var(--amber-deep); backdrop-filter: blur(8px); transition: transform .25s ease; }
+  .bar.away { transform: translateY(115%); }
+  .bar .p { font-family: var(--display); font-weight: 900; font-size: 1.35rem; line-height: 1.05; color: var(--cream); }
+  .bar .p small { display: block; font-family: var(--type); font-weight: 400; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dim); }
+  .bar .btn { min-height: 50px; padding: 0 18px; font-size: 0.86rem; box-shadow: none; }
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .hero .wrap, .split, .how, .about, .bonus, .solo, .chan { grid-template-columns: minmax(0, 1fr); }
+  .solo-cover { max-width: 230px; }
+  .kit { max-width: 460px; width: 100%; margin-inline: auto; }
+  .phases, .plans { grid-template-columns: minmax(0, 1fr); }
+  .plan.best { order: -1; }
+  .realpage { max-width: 320px; }
+  .shot img { aspect-ratio: 5 / 4; }
+  .portrait { max-width: 320px; }
+}
+@media (max-width: 640px) {
+  .duo, .slips, .reports, .ba, .addons, .frs { grid-template-columns: minmax(0, 1fr); }
+  .fr { padding: 20px 16px; }
+  .fr-head .done { margin-left: 0; }
+  .player .play { width: 68px; height: 68px; margin: -34px 0 0 -34px; }
+  .player .play::after { left: 27px; top: 20px; border-width: 14px 0 14px 22px; }
+  .slip:nth-child(n) { transform: none; }
+  .cta, .cta .btn { width: 100%; }
+  .cta { align-items: stretch; }
+  .cta .priceline, .cta .fine { text-align: center; }
+  .cert { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; }
+  .cert .tag { justify-content: center; }
+  .seal { width: 128px; height: 128px; }
+  .seal b { font-size: 2.5rem; }
+  .launch { grid-template-columns: minmax(0, 1fr); }
+  .strip span:nth-child(3) { display: none; }
+  .final::before { background-position: 88% 50%; }
+  .final::after { background: linear-gradient(180deg, rgba(5, 4, 3, 0.88), rgba(5, 4, 3, 0.72)); }
+  .pin { right: -10px; }
+}
+@media (prefers-reduced-motion: reduce) { .btn, .bar { transition: none; } }
+</style>
+</head>
+<body>
+<div class="strip" role="note">
+  <div class="wrap">
+    <span>Instant PDF access</span>
+    <span>30-day money-back guarantee</span>
+    <span>Secure checkout by Hotmart</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="col">
+      <span class="stamp" id="hero-stamp" style="align-self: flex-start">Warning</span>
+      <h1 id="hero-h1"><span>This is <em>not</em></span><span>a devotional.</span></h1>
+      <p class="dare" id="hero-dare">If you've made peace with a comfortable, powerless Christian life, close this page now.</p>
+      <p class="lede">Still here? Then this was written for you. <b>The War Room Manual is a 30-day boot camp for the believer whose prayer life died on day four.</b> Every night you read one page. Every morning you wake up to one mission. No fluff, no guesswork, nothing left to figure out.</p>
+      <div class="cta" id="hero-cta">
+        <a class="btn" href="https://pay.hotmart.com/X106714964C?checkoutMode=10&amp;src=lp_hero">Report for Duty <span class="ar">→</span></a>
+        <span class="priceline"><b>$44.99</b> one-time · instant access · 30-day guarantee</span>
+      </div>
+      <div class="proof">
+        <img src="seal.png" width="42" height="42" alt="Christian Thinkers seal">
+        <span><strong>700+ believers in 40+ countries</strong> are already using it. From Christian Thinkers, <strong>32,600+ subscribers</strong> on YouTube.</span>
+      </div>
+    </div>
+    <div class="kit" role="img" aria-label="The War Room Manual cover with a page from Day 1 and the Prayer Journal, on a candlelit desk">
+      <img class="k-page" src="page-day1.webp" width="720" height="1017" alt="">
+      <img class="k-journal" src="journal.webp" width="520" height="735" alt="">
+      <img class="k-cover" src="cover.webp" width="600" height="856" alt="">
+      <span class="stamp">30 days · 30 missions</span>
+    </div>
+  </div>
+</header>
+
+<section class="band lit" aria-labelledby="watch">
+  <div class="wrap slim col center">
+    <span class="tag">Watch this first</span>
+    <h2 id="watch">Three minutes that explain <em>the thirty days.</em></h2>
+    <div class="player">
+      <video id="vsl" controls playsinline preload="none" poster="vsl-poster.webp" aria-label="Luis explains how The War Room Manual works">
+        <source src="vsl.mp4" type="video/mp4">
+      </video>
+    </div>
+    <p class="lede">Prefer to read? Everything in the video is on this page, including the whole first day, free.</p>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="sitrep">
+  <div class="wrap split">
+    <div class="col">
+      <span class="tag">Situation report</span>
+      <h2 id="sitrep">You don't have a prayer problem. You have a <em>plan</em> problem.</h2>
+      <p class="lede">Nobody has to convince you that prayer matters. You know it does. That is exactly why these words sound familiar:</p>
+      <ul class="voices">
+        <li>"I start strong on Monday. By Thursday, the alarm wins."</li>
+        <li>"I read a chapter, close my Bible, and nothing in my day changes."</li>
+        <li>"I've been praying the same three sentences for years."</li>
+        <li>"I leave church on fire. By Wednesday it's ashes."</li>
+        <li>"If I'm honest, I pray out of guilt more than hunger."</li>
+        <li>"I've restarted so many times that I stopped telling anyone."</li>
+      </ul>
+      <p class="turn">None of that means you don't love God, and it is not a lack of faith. Every tool you were given asked you to <em>read</em> something. None of them told you what to <em>do</em> when you closed the book. So the next morning was empty, and your phone filled it.</p>
+      <p class="turn"><b>Feeling does not survive Tuesday. Structure survives Tuesday.</b></p>
+    </div>
+    <figure class="shot">
+      <img src="clock.webp" width="900" height="709" loading="lazy" alt="A man standing by a window before dawn, an alarm clock on the nightstand showing 4:12">
+      <figcaption><b>4:12 AM.</b> The alarm doesn't have to win.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band lit" aria-labelledby="who">
+  <div class="wrap col">
+    <span class="tag">Eligibility</span>
+    <h2 id="who">Not everyone should enter the War Room.</h2>
+    <div class="duo">
+      <div class="elig">
+        <h3>Report for duty if…</h3>
+        <ul>
+          <li>you love God, but your prayer life keeps dying a few days in;</li>
+          <li>you pray out of duty, and you're tired of it;</li>
+          <li>you feel stuck, and another inspiring quote won't fix it;</li>
+          <li>you'd rather be told the truth than be comforted;</li>
+          <li>you're willing to give God thirty mornings.</li>
+        </ul>
+      </div>
+      <div class="elig no">
+        <h3>Stand down if…</h3>
+        <ul>
+          <li>you want a gentle, feel-good read before bed;</li>
+          <li>you're looking for a formula to get things from God;</li>
+          <li>you want something to replace your Bible or your church. Nothing does;</li>
+          <li>you plan to read the missions and skip them.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">You don't need to be a pastor, a leader or a "prayer warrior." You need to be willing.</p>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="profile">
+  <div class="wrap col">
+    <span class="tag">Mission profile</span>
+    <h2 id="profile">Thirty days. Three phases. <em>One direction.</em></h2>
+    <p class="lede">The order is on purpose. First the altar is cleared. Then you learn to stay in God's presence. Only then are you sent to fight for other people.</p>
+    <div class="phases">
+      <article class="phase">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c.6 3.6 5 5.6 5 10.6a5 5 0 0 1-10 0c0-1.9.8-3.2 1.9-4.2.1 1.9.9 3 2.1 3.2-.3-3.8-.9-6 1-9.6z"/></svg>
+        <span class="days">DAYS 1–10</span>
+        <h3>Purification &amp; Repentance</h3>
+        <span class="stamp code">Kill the ego</span>
+        <p>Before you fight for anyone else, the altar gets cleared. You name what has to die, and you let it die. This phase cuts on purpose.</p>
+        <p class="work"><b>The work</b>Confession. Fasting. Surrender, signed and dated.</p>
+        <p class="voice">In the spirit of Leonard Ravenhill</p>
+      </article>
+      <article class="phase">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V10.5a7 7 0 0 1 14 0V21M3 21h18M12 10.5c1 1.4 2 2.4 2 3.9a2 2 0 0 1-4 0c0-1.5 1-2.5 2-3.9zM12 16.4V21"/></svg>
+        <span class="days">DAYS 11–20</span>
+        <h3>Worship &amp; Mystery</h3>
+        <span class="stamp code">The Holy of Holies</span>
+        <p>The noise goes off. You learn to sit in silence, to stay with a single verse for an hour, and to seek God for who He is, not for what He gives.</p>
+        <p class="work"><b>The work</b>Silence. Meditation on Scripture. Adoration.</p>
+        <p class="voice">In the spirit of A.W. Tozer</p>
+      </article>
+      <article class="phase">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.2 3.2V15H9.8V5.2L12 2zM6.5 15h11M12 15v5.5M10 21.5h4"/></svg>
+        <span class="days">DAYS 21–30</span>
+        <h3>Intercession &amp; Authority</h3>
+        <span class="stamp code">The War Room</span>
+        <p>Now you fight for other people. You build a place of prayer, carry ten names before God every day, and learn not to quit on a request.</p>
+        <p class="work"><b>The work</b>A prayer room. A list of names. A watch in the night.</p>
+        <p class="voice">In the spirit of E.M. Bounds</p>
+      </article>
+    </div>
+    <p class="fine">The manual is written in the spirit of their teaching. Ravenhill, Tozer and Bounds did not write or endorse it.</p>
+    <div class="cta mid">
+      <a class="btn" href="https://pay.hotmart.com/X106714964C?checkoutMode=10&amp;src=lp_phases">Enter the War Room <span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="epi">
+  <div class="wrap slim">
+    <blockquote>"Talking to men for God is a great thing, but talking to God for men is greater still."
+      <cite>E.M. Bounds · Power Through Prayer</cite>
+    </blockquote>
+  </div>
+</div>
+
+<section class="band lit" aria-labelledby="how">
+  <div class="wrap how">
+    <figure class="realpage">
+      <img src="page-day1.webp" width="720" height="1017" loading="lazy" alt="The real Day 1 page of the manual: Scripture at the top, The Fire in the middle, The Mission at the bottom">
+      <span class="pin p1" aria-hidden="true">1</span>
+      <span class="pin p2" aria-hidden="true">2</span>
+      <span class="pin p3" aria-hidden="true">3</span>
+      <figcaption class="fine">An actual page from the manual</figcaption>
+    </figure>
+    <div class="col">
+      <span class="tag">Daily orders</span>
+      <h2 id="how">How one day works</h2>
+      <ol class="steps">
+        <li>
+          <span class="n">1</span>
+          <div><span class="when">Tonight</span><h3>Read</h3><p>One page. A verse from the King James Bible, then <strong>The Fire</strong>: a short, blunt teaching with no fluff. Five minutes.</p></div>
+        </li>
+        <li>
+          <span class="n">2</span>
+          <div><span class="when">Before you sleep</span><h3>Reflect</h3><p>Let the page search you. This is where the excuses get named, and where the Journal comes in if you want to write your answer down.</p></div>
+        </li>
+        <li class="exec">
+          <span class="n">3</span>
+          <div><span class="when">Tomorrow</span><h3>Execute</h3><p>Every page ends with <strong>The Mission</strong>: one specific assignment. Not a thought to consider. Something to do.</p></div>
+        </li>
+      </ol>
+      <p class="pull">You never wake up wondering what to do. <span>Tomorrow is already written.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="day1">
+  <div class="wrap slim col">
+    <span class="tag">Declassified · free preview</span>
+    <h2 id="day1">Don't take our word for it. <em>Here is Day 1.</em></h2>
+    <p class="lede">The full first day, word for word. Read it the way you would tonight.</p>
+    <article class="paper doc">
+      <div class="head"><span>Phase 1 · Purification, Holiness &amp; Repentance</span><span class="stamp">Day 1 of 30</span></div>
+      <h3>Day 1: The Death Sentence</h3>
+      <span class="part">Scripture</span>
+      <p class="verse">"Verily, verily, I say unto you, Except a corn of wheat fall into the ground and die, it abideth alone: but if it die, it bringeth forth much fruit." <b>JOHN 12:24 · KJV</b></p>
+      <span class="part">The Fire</span>
+      <div class="fire">
+        <p>You want revival? You want power? You want God to use you? Then die.</p>
+        <p>Not tomorrow. Not when it's convenient. Today. This hour. Die to self. Die to reputation. Die to comfort. Die to opinions. Die to every secret ambition that has nothing to do with the cross.</p>
+        <p>The church is filled with the living dead—breathing, moving, singing, but spiritually lifeless. We've baptized our ambitions and called them ministry. We've painted our pride and named it vision. We've dressed up our flesh in Christian terminology and paraded it before men.</p>
+        <p>God is looking for corpses. Dead men don't defend themselves. Dead men don't build kingdoms. Dead men don't seek applause. When you're dead, criticism can't wound you. Success can't inflate you. Failure can't devastate you.</p>
+        <p>Jesus didn't say, 'Improve yourself.' He said, 'Deny yourself. Take up your cross. Follow Me.' That cross isn't a religious symbol to wear around your neck. It's an execution device.</p>
+        <p>Stop asking God to bless your plans. Start asking Him to kill them. Stop praying for promotion. Start praying for crucifixion. The grain of wheat that refuses to fall into the ground and die remains alone—fruitless, useless, forgotten.</p>
+        <p>Your old life must end. Not be reformed. Not be improved. Not be redirected. Ended. Buried. Dead.</p>
+        <p>Are you afraid of what death will cost you? Then you've not yet seen what life in the flesh is already costing you—the presence of God, the power of God, the pleasure of God.</p>
+        <p>The choice is yours: remain alone or die and bear fruit. But know this—there is no middle ground. There is no resurrection without death.</p>
+      </div>
+      <div class="orders-box">
+        <span class="part">The Mission</span>
+        <p>Today, write your obituary. Literally. List everything about the old you that must die: pride, bitterness, secret sins, hidden idols, selfish ambitions. Then burn it. Pray over the ashes: 'Lord, let these things stay dead.'</p>
+      </div>
+    </article>
+    <p class="lede" style="align-self: center; text-align: center">That was one night. Here are four more of your orders:</p>
+    <div class="slips">
+      <article class="paper slip">
+        <span class="d">Day 4 · Luke 18:1</span>
+        <h3>The Poison of Prayerlessness</h3>
+        <p>"Set your alarm for 5:00 AM tomorrow. Spend the first hour of your day in prayer. Not reading. Not scrolling. Praying."</p>
+      </article>
+      <article class="paper slip">
+        <span class="d">Day 12</span>
+        <h3>The Silence Before the Storm</h3>
+        <p>"Turn off all devices… Sit in complete silence for 30 minutes… This is not wasted time—this is where God speaks."</p>
+      </article>
+      <article class="paper slip">
+        <span class="d">Day 24</span>
+        <h3>The Ministry of Intercession</h3>
+        <p>"Create a list of ten people who need Christ or have fallen away from Him. Commit to pray for them daily for the next 30 days."</p>
+      </article>
+      <article class="paper slip">
+        <span class="d">Day 26</span>
+        <h3>The Watchman's Post</h3>
+        <p>"Set your alarm for 3:00 AM tonight. When it rings, get up and pray for one hour… When the world sleeps, you pray."</p>
+      </article>
+    </div>
+    <p class="count">That's five missions. <span>There are twenty-five more.</span></p>
+    <div class="cta mid">
+      <a class="btn" href="https://pay.hotmart.com/X106714964C?checkoutMode=10&amp;src=lp_day1">Continue to Day 2 <span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="band lit" aria-labelledby="after">
+  <div class="wrap col">
+    <span class="tag">After action</span>
+    <h2 id="after">What thirty days of missions leave behind</h2>
+    <div class="ba">
+      <div class="before">
+        <h3>Day 0</h3>
+        <ul>
+          <li>Prayer when you remember</li>
+          <li>A plan that lasts until Thursday</li>
+          <li>Mornings that start with your phone</li>
+          <li>Nobody you pray for by name</li>
+          <li>Good intentions, again</li>
+        </ul>
+      </div>
+      <div class="after">
+        <h3>Day 30, if you do the missions</h3>
+        <ul>
+          <li><span><b>A set place and a set hour.</b> Your own war room, visited at the same time every day. <i>Day 23</i></span></li>
+          <li><span><b>Ten names.</b> A written list of people you have carried before God daily. <i>Day 24</i></span></li>
+          <li><span><b>Mornings that start on your knees,</b> not on your phone. <i>Days 4 and 21</i></span></li>
+          <li><span><b>A cleared altar.</b> What had to die was written down, confessed and burned, not carried. <i>Days 1 and 19</i></span></li>
+          <li><span><b>The practice of silence.</b> Time before God with no music, no screen and no script. <i>Days 2 and 12</i></span></li>
+          <li><span><b>A covenant with your signature on it,</b> dated and posted where you can see it. <i>Day 30</i></span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="honest">Nobody can honestly promise you what God will do in those thirty days, and this page won't try. What the manual promises is simpler: <strong>you will never again wake up not knowing what to do.</strong></p>
+    <div class="cta mid">
+      <a class="btn" href="https://pay.hotmart.com/X106714964C?checkoutMode=10&amp;src=lp_after">Report for Duty <span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="reports">
+  <div class="wrap col">
+    <span class="tag">Field reports</span>
+    <h2 id="reports">Their words, <em>not ours.</em></h2>
+    <p class="lede">These are unedited. Under each quote is the original comment or email, exactly as it reached us.</p>
+    <div class="nums">
+      <div><b>700+</b><span>believers enlisted</span></div>
+      <div><b>40+</b><span>countries</span></div>
+    </div>
+    <div class="frs">
+      <figure class="fr lead">
+        <div class="fr-head"><span class="ini">S</span><div><b>Stephanie A.</b><span>Arizona, USA · YouTube comment</span></div><span class="done">Completed all 30 days</span></div>
+        <blockquote>"I have completed the 30 day War Room study. Life changing."</blockquote>
+        <div class="print" tabindex="0" role="group" aria-label="Original YouTube comment from Stephanie"><img src="print-stephanie.webp" width="739" height="97" loading="lazy" style="height: 118px" alt="Screenshot of the comment: I have completed the 30 day War Room study. Life changing. Standing as an intercessor for lost souls. Praying, covered by the Blood of Jesus and filled with the Holy Spirit. Answer the call. Become a persistent prayer warrior. Utilize the keys to the kingdom available to all believers. God bless you!"></div>
+        <figcaption>The original comment <i>· swipe sideways to read it</i></figcaption>
+      </figure>
+      <figure class="fr">
+        <div class="fr-head"><span class="ini">W</span><div><b>William W.</b><span>YouTube comment</span></div></div>
+        <blockquote>"He is revealing himself in ways I never knew possible. He has taught me that the secret place is not a geographical location but it is in the abiding!"</blockquote>
+        <div class="print" tabindex="0" role="group" aria-label="Original YouTube comment from William"><img src="print-william.webp" width="1372" height="101" loading="lazy" style="height: 88px" alt="Screenshot of the comment: Just to let everybody know I participated in the War Room challenge and it has changed my walk with god. He is revealing himself in ways I never knew possible. He has taught me that the secret place is not a geographical location but it is in the abiding! God bless you Brothers"></div>
+        <figcaption>The original comment <i>· swipe sideways to read it</i></figcaption>
+      </figure>
+      <figure class="fr">
+        <div class="fr-head"><span class="ini">G</span><div><b>Guy F.</b><span>Albany, Texas · YouTube comment</span></div></div>
+        <blockquote>"I have the War Room manual and i Highly recommend it to all who seek a deeper relationship with God."</blockquote>
+        <div class="print" tabindex="0" role="group" aria-label="Original YouTube comment from Guy"><img src="print-guy.webp" width="1027" height="75" loading="lazy" style="height: 75px" alt="Screenshot of the comment: Albany, Tx... I have the War Room manual and i Highly recommend it to all who seek a deeper relationship with God.. thank you"></div>
+        <figcaption>The original comment <i>· swipe sideways to read it</i></figcaption>
+      </figure>
+      <figure class="fr lead">
+        <div class="fr-head"><span class="ini">C</span><div><b>Charlene C.</b><span>Going through the manual with her prayer group · Email</span></div></div>
+        <blockquote>"It is an excellent study and stretching us already… We spent two weeks on our obituaries. And now day 2 has revealed our need to "step away" from the noise of the world and spend time (an hour) listening."</blockquote>
+        <div class="print" tabindex="0" role="group" aria-label="Original email from Charlene"><img src="print-charlene.webp" width="1553" height="332" loading="lazy" style="height: 300px" alt="Screenshot of the email: Thank you very much for your reply, kindness and generosity. It is an excellent study and stretching us already. Thank you for creating it. We are meeting once a week and then tackling the mission over the week. We spent two weeks on our obituaries. And now day 2 has revealed our need to step away from the noise of the world and spend time (an hour) listening. I thought it important to tell you that your ministry makes a difference."></div>
+        <figcaption>The original email <i>· swipe sideways to read it</i></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="band lit" aria-labelledby="about">
+  <div class="wrap chan">
+    <figure class="browser">
+      <div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span>youtube.com/@ChristianThinkersOfficial</span></div>
+      <img src="channel.webp" width="1400" height="767" loading="lazy" alt="The Christian Thinkers YouTube channel: 32.6 thousand subscribers, 241 videos, sermons by E.M. Bounds, Leonard Ravenhill, John Wesley and Charles Spurgeon">
+    </figure>
+    <div class="col">
+      <span class="tag">Who is behind this</span>
+      <h2 id="about">From the channel that brought the old preachers <em>back.</em></h2>
+      <p class="sand">Christian Thinkers is a YouTube channel devoted to the preaching of Leonard Ravenhill, A.W. Tozer, E.M. Bounds, Charles Spurgeon and other men of prayer.</p>
+      <div class="nums small">
+        <div><b>32,600+</b><span>subscribers</span></div>
+        <div><b>241</b><span>videos</span></div>
+        <div><b>219,000</b><span>views on one sermon about the secret place</span></div>
+      </div>
+      <p class="sand">But a sermon ends when the video ends. It can set you on fire on Sunday and be forgotten by Wednesday. The War Room Manual was written to start where the sermon stops. Not more to watch. Something to do tomorrow morning.</p>
+      <div class="byline"><img src="luis.webp" width="760" height="909" loading="lazy" alt="Luis"><div><b>Luis</b><span>Creator of Christian Thinkers</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="offer" aria-labelledby="loadout">
+  <div class="wrap col">
+    <div class="col center">
+      <span class="tag">Your orders are ready</span>
+      <h2 id="loadout">Everything you get <em>tonight.</em></h2>
+      <p class="lede">One payment. No subscription. In your inbox within minutes.</p>
+    </div>
+    <div class="solo" id="plans">
+      <img class="solo-cover" src="cover.webp" width="600" height="856" loading="lazy" alt="The War Room Manual cover">
+      <div class="plan bare">
+        <span class="name">The War Room Manual</span>
+        <ul>
+          <li><span><b>30 days, 30 missions,</b> in three phases (PDF)</span></li>
+          <li><span><b>Every day on one page:</b> Scripture, The Fire and The Mission</span></li>
+          <li><span><b>3 bonus books</b> from The War Room Bonus Collection (PDF)</span></li>
+          <li><span><b>Instant access</b> on any phone, tablet or computer</span></li>
+          <li><span><b>30-day Iron Knees Guarantee</b></span></li>
+        </ul>
+        <div class="price"><b>$44.99</b><span>One time. That's $1.50 a day for thirty days.</span></div>
+        <a class="btn" href="https://pay.hotmart.com/X106714964C?checkoutMode=10&amp;src=lp_offer">Report for Duty <span class="ar">→</span></a>
+      </div>
+    </div>
+    <div class="col tight">
+      <p class="addons-title">Optional. You can add these on the checkout page:</p>
+      <div class="addons">
+        <div class="addon">
+          <img src="journal.webp" width="520" height="735" loading="lazy" alt="The War Room Prayer Journal cover">
+          <div><b>The War Room Prayer Journal</b><p>The manual gives you the fire. The journal is where you respond: a page for every day, with what God is speaking, what must die and your mission. Printable PDF.</p><span class="plus">+ $14.97</span></div>
+        </div>
+        <div class="addon">
+          <span class="tape" aria-hidden="true"><i><s style="height:8px"></s><s style="height:18px"></s><s style="height:26px"></s><s style="height:14px"></s><s style="height:22px"></s><s style="height:10px"></s><s style="height:18px"></s></i>AUDIO<br>30 MP3</span>
+          <div><b>The Audio Version</b><p>All 30 days read aloud, one MP3 per day, for the car, the walk or the night you are too tired to read.</p><span class="plus">+ $17.97</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="pay" aria-label="Payment methods"><span>Visa</span><span>Mastercard</span><span>Amex</span><span>PayPal</span><span>Apple Pay</span><span>Google Pay</span></div>
+    <div class="bonus">
+      <div class="covers">
+        <img src="bonus1.webp" width="360" height="540" loading="lazy" alt="The Fire Chronicles cover">
+        <img src="bonus2.webp" width="360" height="540" loading="lazy" alt="Unbroken Faith cover">
+        <img src="bonus3.webp" width="360" height="540" loading="lazy" alt="Sacred Worship cover">
+      </div>
+      <div class="col tight">
+        <span class="tag">Included free with the manual</span>
+        <h3>The War Room Bonus Collection</h3>
+        <dl>
+          <div><dt>The Fire Chronicles</dt><dd>True stories of history's greatest revivals, and of the people who prayed before each one: Zinzendorf, Lanphier, Evan Roberts and the sisters of the Hebrides.</dd></div>
+          <div><dt>Unbroken Faith</dt><dd>True stories of prayer that refused to quit, from Monica's seventeen years of praying for her son to George Müller.</dd></div>
+          <div><dt>Sacred Worship</dt><dd>The forgotten ways God's people adored Him: bowing low, silence, remembrance and the poured-out offering.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band lit" aria-labelledby="guarantee">
+  <div class="wrap slim col">
+    <div class="paper cert">
+      <div class="seal" aria-hidden="true"><div><span>Iron Knees</span><b>30</b><span>Day guarantee</span></div></div>
+      <div class="col tight">
+        <span class="tag">The Iron Knees Guarantee</span>
+        <h2 id="guarantee">Start the missions. You have 30 days to decide.</h2>
+        <p>Open the manual tonight and do Day 1. If it isn't what you expected, request a full refund through Hotmart within 30 days of your purchase. Hotmart handles the refund for you.</p>
+      </div>
+    </div>
+    <div class="cta mid">
+      <a class="btn" href="https://pay.hotmart.com/X106714964C?checkoutMode=10&amp;src=lp_guarantee">Report for Duty <span class="ar">→</span></a>
+      <span class="fine">$44.99 · secure checkout by Hotmart</span>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="faq">
+  <div class="wrap slim col">
+    <span class="tag">Briefing</span>
+    <h2 id="faq">Questions before you enlist</h2>
+    <div class="faq">
+      <details><summary>What format is it? Is it a physical book?</summary><p>It's digital. The manual and the three bonus books are PDF files. Nothing is shipped. The Prayer Journal (printable PDF) and the Audio Version (30 MP3 files, one per day) are optional, and you can add them on the checkout page.</p></details>
+      <details><summary>How do I receive it?</summary><p>As soon as your payment is approved, Hotmart emails your access to the address you used at checkout. Card, PayPal and Apple Pay payments are usually approved within minutes.</p></details>
+      <details><summary>Which devices does it work on?</summary><p>Any phone, tablet or computer that opens a PDF. You can also print it, or send the PDF to your Kindle.</p></details>
+      <details><summary>How much time does it take each day?</summary><p>One page a night, five minutes to read, and one mission to do the next day.</p></details>
+      <details><summary>Is it for my denomination?</summary><p>If you believe the Bible and want to pray, it's for you. Every verse is quoted from the King James Version, and the manual doesn't promote any denomination.</p></details>
+      <details><summary>Do I need to be a pastor or a leader?</summary><p>No. It was written for ordinary believers. It also works in groups: one reader told us her prayer group meets once a week and takes on a mission together.</p></details>
+      <details><summary>Does it replace my Bible or my church?</summary><p>No. Nothing replaces your Bible. Every day starts in Scripture and sends you back to it.</p></details>
+      <details><summary>Some missions involve fasting. What if I have a health condition?</summary><p>Talk to your doctor first. If fasting from food isn't safe for you, fast from something else, like your phone or entertainment. God looks at the heart.</p></details>
+      <details><summary>How does the refund work?</summary><p>You have 30 days from the day you buy. Request the refund through Hotmart, from the link in your purchase email or in Hotmart's Help Center, and the money goes back to the same payment method you used. How quickly it shows up depends on your card or bank.</p></details>
+      <details><summary>Did Ravenhill, Tozer or Bounds write this?</summary><p>No. The manual is published by Christian Thinkers and written in the spirit of their teaching. It quotes Scripture, not them, and they did not write or endorse it.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="final">
+  <div class="wrap">
+    <div class="col">
+      <span class="tag">Final orders</span>
+      <h2 id="final">The War Room <em>is open.</em></h2>
+      <p class="lede">Thirty days from now you will have thirty more days behind you either way. The only question is what will be in them. Tonight: Day 1. Tomorrow morning: your first mission.</p>
+      <div class="cta">
+        <a class="btn" href="https://pay.hotmart.com/X106714964C?checkoutMode=10&amp;src=lp_final">Report for Duty <span class="ar">→</span></a>
+        <span class="priceline"><b>$44.99</b> · 3 bonus books · 30-day Iron Knees Guarantee</span>
+      </div>
+      <p class="ps">P.S. You risk nothing by starting tonight. Do the first missions, and if the manual isn't for you, Hotmart refunds you within 30 days.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span>© 2026 Christian Thinkers · The War Room Manual</span>
+      <nav aria-label="Footer">
+        <a href="https://www.youtube.com/@ChristianThinkersOfficial">YouTube</a>
+        <a href="https://www.facebook.com/profile.php?id=61589467162918">Facebook</a>
+        <a href="https://www.instagram.com/christianthinkersofc/">Instagram</a>
+      </nav>
+    </div>
+    <small>Payments are processed securely by Hotmart. The War Room Manual is an independent publication of Christian Thinkers and is not affiliated with any film, publisher or ministry of a similar name. This site is not part of Facebook or Meta Platforms, Inc., and is not endorsed by Meta in any way.</small>
+  </div>
+</footer>
+
+<div class="bar" id="bar">
+  <span class="p">$44.99<small>30-day guarantee</small></span>
+  <a class="btn" href="https://pay.hotmart.com/X106714964C?checkoutMode=10&amp;src=lp_bar">Report for Duty →</a>
+</div>
+
+<script>
+(function () {
+  // The headline repeats the ad the visitor clicked: add ?ad=plan or ?ad=lie to the page link (or #ad-plan / #ad-lie).
+  var ads = {
+    plan: {
+      stamp: "This is not a devotional",
+      h1: "<span>You don't have a</span><span>prayer problem.</span><span>You have a <em>plan</em> problem.</span>",
+      dare: "You were handed something to read when you needed something to do.",
+      sit: "This is why your last plan <em>died on day four.</em>"
+    },
+    lie: {
+      stamp: "This is not a devotional",
+      h1: "<span>“God is close to others,</span><span>just not to me.”</span><span><em>That's a lie.</em></span>",
+      dare: "He has not moved. What is missing is not His nearness. It is a plan to meet Him every day.",
+      sit: "You don't have a prayer problem. You have a <em>plan</em> problem."
+    }
+  };
+  var q = new URLSearchParams(location.search);
+  var key = q.get("ad") || (location.hash.indexOf("#ad-") === 0 ? location.hash.slice(4) : "");
+  var ad = ads[key];
+  if (ad) {
+    var h1 = document.getElementById("hero-h1");
+    h1.innerHTML = ad.h1; h1.classList.add("long");
+    document.getElementById("hero-stamp").textContent = ad.stamp;
+    document.getElementById("hero-dare").textContent = ad.dare;
+    document.getElementById("sitrep").innerHTML = ad.sit;
+  }
+  // Every checkout link carries which ad and which button sold, plus any utm_ tags from the ad.
+  document.querySelectorAll('a[href*="pay.hotmart.com"]').forEach(function (a) {
+    var u = new URL(a.href);
+    if (ad) u.searchParams.set("src", u.searchParams.get("src") + "_" + key);
+    q.forEach(function (v, k) { if (k.indexOf("utm_") === 0) u.searchParams.set(k, v); });
+    a.href = u.toString();
+  });
+  var bar = document.getElementById("bar");
+  if (!bar || !("IntersectionObserver" in window)) return;
+  var seen = new Set();
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { e.isIntersecting ? seen.add(e.target) : seen.delete(e.target); });
+    bar.classList.toggle("away", seen.size > 0);
+  }, { threshold: 0.15 });
+  [document.getElementById("hero-cta"), document.getElementById("plans"), document.querySelector(".final")].forEach(function (t) { if (t) io.observe(t); });
+})();
+</script>
+</body>
+</html>
